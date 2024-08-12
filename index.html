@@ -68,9 +68,9 @@
             <!-- top navbar end-->
 
              <!-- Main navbar start-->
-                <nav class="navbar navbar-expand-lg py-3" id="main-navbar">
+                <nav class="navbar navbar-expand-lg py-3">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Scrub Mup Inc</a>
+                    <a class="navbar-brand fw-bold" href="#">Scrub Mup Inc</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -81,7 +81,7 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav mb-lg-0">
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa fa-layer-group"></i> Category <i class="fa fa-angle-down"></i>
                                 </a>
@@ -91,12 +91,9 @@
                                     <li><a class="dropdown-item" href="#">Constructions</a></li>
                                     <li><a class="dropdown-item" href="#">Offices</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blog">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact-us">Contact Us</a>
@@ -113,40 +110,11 @@
             <!-- Hero section start-->
             <div class="container-xxl py-0 py-lg-3 pb-0 bg-dark hero-header mb-3 pb-3 mb-md-3 mb-lg-5">
                 <div class="container my-0 my-lg-2 py-lg-3 pb-0">
-                    <div class="row row-md-reversed align-items-center justify-content-center">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-6 text-white animated slideInLeft mt-5">We understand the importance of a clean, healthy living and working environment.</h1>
-                            <h4 class="text-white animated slideInLeft mb-lg-4 pb-2">We're your trusted partner for professional and personalized cleaning services</h4>
-                            <button class="btn btn-success" id="appointment-btn">Book an Appointment</button>
-                        </div>
-                        <div class="col-md-6 col-md-9 align-self-start ms-md-5 animated slideInRight hidden form-div"> 
-                            <form action="" method="post">
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Your Name" required/>
-                                    <label for="fullname">Your Name</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone Number" required/>
-                                    <label for="phone">Phone Number</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="address" name="address" id="address" class="form-control" placeholder="Your Address" required/>
-                                    <label for="address">Your Address</label>
-                                </div>
-                                <div class="mb-3">
-                                    <select name="service-type" id="service-type" class="form-select">
-                                        <option>Type of Service</option>
-                                        <option value="RES">Residential</option>
-                                        <option value="COM">Commercials</option>
-                                        <option value="CON">Construction Site</option>
-                                        <option value="OFF">Office</option>
-                                    </select>
-                                </div>
-                                <div class="mb-5 pb-3 d-flex justify-content-between">
-                                    <button class="btn btn-success col-6 col-md-5" id="booking-btn" style="text-transform: none;">I'm ready to book</button>
-                                    <button class="btn btn-danger col-4 col-md-5" id="cancel-btn" style="text-transform: none;">Cancel</button>
-                                </div>
-                            </form>
+                    <div class="row align-items-center justify-content-center justify-content-md-start">
+                        <div class="col-md-6 col-sm-12 text-center text-lg-start">
+                            <h1 class="text-white animated slideInLeft mt-4">We understand the importance of a clean, healthy living and working environment.</h1>
+                            <p class="text-white animated slideInLeft mb-lg-4 pb-2">We're your trusted partner for professional and personalized cleaning services</p>
+                            <button class="btn btn-magneta" id="appointment-btn" data-bs-target="#appointmentModal" data-bs-toggle="modal">Book an Appointment</button>
                         </div>
                     </div>
                 </div>
@@ -159,11 +127,11 @@
         <section id="services">
             <div class="text-center">
                 <h5 class="section-title ff-secondary text-center text-magneta fw-normal">Our Services</h5>
-                <h1 class="mb-5">What We Do.</h1>
+                <h1 class="mb-3">What We Do.</h1>
             </div>
             <div class="container">
-                <div class="row">  
-                    <div class="col-lg-4 col-md-6 services wow fadeInUp pt-5" data-wow-delay="0.1s">
+                <div class="row justify-content-center justify-content-md-start">  
+                    <div class="col-lg-4 col-md-6 col-11 services wow fadeInUp pt-3" data-wow-delay="0.1s">
                         <div class="d-block d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-balcony"></span>
@@ -175,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 services wow fadeInUp pt-5" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 col-11 services wow fadeInUp pt-5" data-wow-delay="0.1s">
                         <div class="d-block d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-workplace"></span>
@@ -187,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 services wow fadeInUp pt-5" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 col-11 services wow fadeInUp pt-5" data-wow-delay="0.1s">
                         <div class="d-block d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-garden"></span>
@@ -199,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 services wow fadeInUp pt-5" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 col-11 services wow fadeInUp pt-5" data-wow-delay="0.1s">
                         <div class="d-block d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-kitchen"></span>
@@ -211,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 services wow fadeInUp pt-5" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 col-11 services wow fadeInUp pt-5" data-wow-delay="0.1s">
                         <div class="d-block d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-pool"></span>
@@ -223,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 services wow fadeInUp pt-5" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 col-11 services wow fadeInUp pt-5" data-wow-delay="0.1s">
                         <div class="d-block d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-rug"></span>
@@ -267,13 +235,13 @@
                         </div>
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                             <h1 class="mb-4">Scrub Mup Inc</h1>
-                            <p class="mb-3">
+                            <p class="mb-3 text-justified">
                                 At Scrub Mup Inc., we believe that a clean space is more than just a luxury—it's a necessity.
                                 Located in the heart of our community, our company specializes in providing top-notch cleaning solutions for
                                 both residential and commercial clients. With a commitment to excellence and a passion for cleanliness, 
                                 we transform your spaces into pristine environments where health and productivity flourish.
                             </p>
-                            <p class="mb-4">
+                            <p class="mb-4 text-justified">
                                 <span class="fs-5">Our Mission</span><br>
 
                                 Our mission at Scrub Mup Inc. is simple: to deliver exceptional cleaning services that meet the unique
@@ -313,7 +281,7 @@
         <section class="container-fluid py-4" style="background-color: #0A152F; min-height: 300px">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 text-light">
-                    <h2 class="text-center text-decoration-underline mb-3">Ready for a <span class="text-warning">Sparkling Clean?</span></h2>
+                    <h2 class="text-center mb-3">Ready for a <span class="text-warning">Sparkling Clean?</span></h2>
                     <p>
                         Transform your space with our professional cleaning services! Whether it's your home, office, 
                         or commercial property, our expert team <span class="text-warning fst-italic">delivers top-notch results</span> every time.
@@ -329,6 +297,9 @@
                 <button class="btn btn-warning" data-bs-target="#appointmentModal" data-bs-toggle="modal">Book an appointment</button>
             </div>
         </section>
+        <!-- Want To work End -->
+
+        <!-- Booking modal start -->
         <div class="modal fade" id="appointmentModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content rounded-0">
@@ -339,19 +310,19 @@
                     <div class="modal-body">
                         <form action="" method="post">
                             <div class="form-floating mb-3">
-                                <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Your Fullname"/>
-                                <label for="full-name">Your Fullname</label>
+                                <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Your Fullname"/>
+                                <label for="fullname">Your Fullname</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Phone Number"/>
-                                <label for="mobile">Phone Number</label>
+                                <input type="number" name="phone" id="phone" class="form-control" placeholder="Phone Number"/>
+                                <label for="phone">Phone Number</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="address" name="home" id="home" class="form-control" placeholder="Your Address"/>
-                                <label for="home">Your Address</label>
+                                <input type="address" name="address" id="address" class="form-control" placeholder="Your Address"/>
+                                <label for="address">Your Address</label>
                             </div>
                             <div class="mb-3">
-                                <select name="service" id="service" class="form-select">
+                                <select name="service_type" id="service_type" class="form-select">
                                     <option>Type of Service</option>
                                     <option value="RES">Residential</option>
                                     <option value="COM">Commercials</option>
@@ -367,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <!-- Want To work End -->
+        <!-- Booking modal end -->
 
         <!-- Testimonial Start -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -427,7 +398,7 @@
         <!-- Testimonial End -->
         
         <!-- Footer Start -->
-        <div class="container-fluid text-light footer pt-lg-5 pt-2 mt-5" id="contact-us">
+        <div class="container-fluid text-light footer pt-lg-5 pt-2 mt-5">
             <div class="container py-lg-4 py-2">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
@@ -450,7 +421,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="contact-us">
                         <h4 class="ff-secondary text-start text-magneta fw-normal mb-4">Contact Us</h4>
                         <p>Got some cleaning to do? Lets handle that for you. Contact us now.</p>
                         <form action="" method="post">
@@ -508,12 +479,6 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
-            $('#appointment-btn').click(function(){
-                $('.form-div').removeClass('hidden');
-                $('#appointment-btn').hide();
-                $('.hero-header').addClass('height');
-            });
-
             $('#booking-btn').click(function(){
                 const fullname = $('#fullname').val();
                 const phone = $('#phone').val();
@@ -523,12 +488,6 @@
                     alert("Your booking request has been sent.")
                 }
             });
-
-            $('#cancel-btn').click(function(){
-                $('#appointment-btn').show();
-                $('.form-div').addClass('hidden');
-                $('.hero-header').removeClass('height');
-            })
         });
     </script>
 </body>
