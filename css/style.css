@@ -206,9 +206,19 @@ a {
     font-size: small;
     text-decoration: none;
   }
-  .top-navbar .phone .mailus {
+  .top-navbar .phone .mailus:hover .fa{
     color: #9D2C82;
-    font-weight: bold;
+    background-color: #fff;
+  }
+
+  .top-navbar .phone .mailus .fa {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
   }
   .social-media a {
     width: 30px;
@@ -346,6 +356,17 @@ a {
 @media (max-width: 767.98px) {
     .hero-header {
         height: auto;
+    }
+    .top-navbar .phone .mailus .fa {
+        color: #9D2C82;
+        border: none;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 0;
+    }
+    .top-navbar .phone .mailus:hover .fa{
+        color: #fff;
+        background-color: #2C9D30;
     }
 }
 
