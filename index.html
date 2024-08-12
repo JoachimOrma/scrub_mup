@@ -112,15 +112,15 @@
             <!-- Main navbar end-->
             
             <!-- Hero section start-->
-            <div class="container-xxl py-0 py-lg-3 pb-0 bg-dark hero-header mb-2 mb-md-3 mb-lg-5" style="height: 600px">
+            <div class="container-xxl py-0 py-lg-3 pb-0 bg-dark hero-header mb-3 pb-3 mb-md-3 mb-lg-5">
                 <div class="container my-0 my-lg-2 py-lg-3 pb-0">
-                    <div class="row row-md-reversed align-items-center">
+                    <div class="row row-md-reversed align-items-center justify-content-center">
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-6 text-white animated slideInLeft mt-5">We understand the importance of a clean, healthy living and working environment.</h1>
                             <h4 class="text-white animated slideInLeft mb-lg-4 pb-2">We're your trusted partner for professional and personalized cleaning services</h4>
                             <button class="btn btn-success" id="appointment-btn">Book an Appointment</button>
                         </div>
-                        <div class="col-lg-5 align-self-start ms-5 animated slideInRight hidden form-div"> 
+                        <div class="col-md-6 col-md-9 align-self-start ms-md-5 animated slideInRight hidden form-div"> 
                             <form action="" method="post">
                                 <div class="form-floating mb-3">
                                     <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Your Name" required/>
@@ -143,8 +143,9 @@
                                         <option value="OFF">Office</option>
                                     </select>
                                 </div>
-                                <div class="mb-3 d-flex justify-content-end">
-                                    <button class="btn btn-success col-12" id="booking-btn" style="text-transform: none;">I'm ready to book</button>
+                                <div class="mb-5 pb-3 d-flex justify-content-between">
+                                    <button class="btn btn-success col-6 col-md-5" id="booking-btn" style="text-transform: none;">I'm ready to book</button>
+                                    <button class="btn btn-danger col-4 col-md-5" id="cancel-btn" style="text-transform: none;">Cancel</button>
                                 </div>
                             </form>
                         </div>
@@ -511,7 +512,9 @@
             $('#appointment-btn').click(function(){
                 $('.form-div').removeClass('hidden');
                 $('#appointment-btn').hide();
+                $('.hero-header').addClass('height');
             });
+
             $('#booking-btn').click(function(){
                 const fullname = $('#fullname').val();
                 const phone = $('#phone').val();
@@ -521,6 +524,12 @@
                     alert("Your booking request has been sent.")
                 }
             });
+
+            $('#cancel-btn').click(function(){
+                $('#appointment-btn').show();
+                $('.form-div').addClass('hidden');
+                $('.hero-header').removeClass('height');
+            })
         });
     </script>
 </body>
